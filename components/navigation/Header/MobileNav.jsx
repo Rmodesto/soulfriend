@@ -6,7 +6,7 @@ const MobileNav = () => {
   return (
     <Toggle
       render={({ on, toggle }) => (
-        <div>
+        <div className="flex items-center">
           {on && <NavLinks />}
 
           <button onClick={toggle} className="md:hidden">

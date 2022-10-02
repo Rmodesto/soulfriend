@@ -2,8 +2,8 @@ import ActiveLink from './ActiveLink';
 
 export const NavLinks = () => {
   return (
-    <ul className="nav flex gap-y-6 gap-8 pt-14 tracking-wider text-base">
-      <li className="justify-between">
+    <ul className="flex-col md:items-center md:flex-row flex md:space-x-8 mt-56 md:mt-0 md:text-sm md:font-medium text-base">
+      <li>
         <ActiveLink
           activeClassName="active underline underline-offset-8 decoration-8 ease-in-out duration-300"
           href="/about"
@@ -26,7 +26,7 @@ export const NavLinks = () => {
       </li>
       <li>
         <ActiveLink
-          activeClassName="active underline underline-offset-8 decoration-8 ease-in-out duration-300"
+          activeClassName="active underline underline-offset-8 decoration-8 ease-in-out duration-300 "
           href="/blog"
         >
           <a className="nav-link hover:underline underline-offset-8 hover:text-lg decoration-8 ease-in-out duration-300">
