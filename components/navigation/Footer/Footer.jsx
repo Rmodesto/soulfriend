@@ -1,26 +1,21 @@
-import React from 'react';
-
-export default function Footer() {
+const Footer = () => {
   return (
-    <div className="max-w-2xl mx-auto">
-      <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
-        <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
+    <div className="max-w-2xl mx-auto w-screen items-center fixed bottom-0">
+      <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800 pr-12">
+        <div className="md:flex md:justify-between mx-auto">
+          <div className="mb-6 md:mb-0 mx-auto pr-6">
             <a href="#" target="_blank" className="flex items-center">
               <img
-                src="https://flowbite.com/docs/images/logo.svg"
+                src="/images/soulLogo.webp"
                 className="mr-4 h-10"
-                alt="FlowBite Logo"
+                alt="SoulAmigaLogo"
               ></img>
-              <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
-              </span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Resources
+                Soul Amiga
               </h3>
               <ul>
                 <li className="mb-4">
@@ -29,7 +24,7 @@ export default function Footer() {
                     target="_blank"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    Flowbite
+                    About
                   </a>
                 </li>
                 <li>
@@ -39,14 +34,14 @@ export default function Footer() {
                     rel="nofollow"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    Tailwind CSS
+                    My Work
                   </a>
                 </li>
               </ul>
             </div>
             <div>
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Follow us
+                Follow me
               </h3>
               <ul>
                 <li className="mb-4">
@@ -55,7 +50,7 @@ export default function Footer() {
                     target="_blank"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    Github
+                    Medium
                   </a>
                 </li>
                 <li>
@@ -101,11 +96,11 @@ export default function Footer() {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2022{' '}
             <a
-              href="https://flowbite.com"
+              href="https://SoulAmiga.com"
               target="_blank"
               className="hover:underline"
             >
-              Flowbite™
+              SoulAmiga™
             </a>
             . All Rights Reserved.
           </span>
@@ -195,14 +190,9 @@ export default function Footer() {
         </div>
       </footer>
 
-      <p className="mt-5">
-        This footer component is part of a larger, open-source library of
-        Tailwind CSS components. Learn more by going to the official{' '}
-        <a className="text-blue-600 hover:underline" href="#" target="_blank">
-          Flowbite Documentation
-        </a>
-        .
-      </p>
+      <p className="mt-5 text-center">Made in New York with love.</p>
     </div>
   );
-}
+};
+
+export default Footer;

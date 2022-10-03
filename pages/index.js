@@ -1,11 +1,9 @@
-import Footer from '../components/navigation/Footer/Footer';
-import Header from '../components/navigation/Header/Header';
+import Primary from '../components/Layouts/Primary/Primary';
 
-export default function Home() {
+export default function Home({ page }) {
   return (
-    <div className="container p-0 m-0 box-border outline-none">
-      <Header />
-      <Footer />
+    <div className="min-h-screen flex flex-col p-0 m-0 box-border items-center overflow-hidden">
+      <Primary>{page}</Primary>
     </div>
   );
 }
